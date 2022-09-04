@@ -1,5 +1,7 @@
 class Produto:
-    def __init__(self, produto, preco, estoque):
+    "Método construtor da classe produto"
+
+    def __init__(self, produto: str, preco: str, estoque: int) -> None:
         self.produto = produto
         self.preco = preco
         self.estoque = estoque
@@ -28,7 +30,9 @@ mercado.adicionar_produtos(arroz.toString())
 
 
 class Pedido:
-    def __init__(self, quantidade, item):
+    "Método construtor da classe pedido"
+
+    def __init__(self, quantidade: int, item: str):
         self.quantidade = quantidade
         self.item = item
 
@@ -37,6 +41,8 @@ class Pedido:
 
 
 class Clientes:
+    "Método construtor da classe Cliente"
+
     def __init__(self, nome, sobrenome, tel, email):
         self.nome = nome
         self.tel = tel
